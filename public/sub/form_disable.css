@@ -1,0 +1,54 @@
+.formClients .row100_disable{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+.formClients .row100_disable .col_disable{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+.formClients .row100_disable .inputBox_disable{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #000;
+}
+.formClients .row100_disable .inputBox_disable input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #fff;
+    z-index: 1;
+}
+.formClients .row100_disable .inputBox_disable .text{
+    position: absolute;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    top: -35px;
+    left: -10px;
+}
+.formClients .row100_disable .inputBox_disable .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}

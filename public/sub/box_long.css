@@ -1,0 +1,99 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.box_long{
+	position: relative;
+	width: 1500px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+	transition: 0.5s;
+	background-color: #fff;
+	opacity: 0.99;
+}
+.box_long:hover{
+	height: 180px;
+}
+.box_long .imgBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #000;
+}
+.box_long:before{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background-color: #fff;
+	z-index: -1;	
+}
+
+.box_long::before,
+.box_long::after
+{
+	background: linear-gradient(235deg, #ffaa2a, #f32804, #dfca0d);
+	
+}
+.box_long .content
+{
+	position: absolute; 
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+.box_long:hover .content
+{
+	opacity: 1;
+}
+.box_long .content h2
+{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+.box_long .xoa
+{
+	position: absolute; 
+	top: 10px;
+	right: 10px;
+	height: 20px;
+	display: flex;
+	opacity: 0;
+	transition: 0.5s;
+}
+.box_long .xoa i{
+	background: linear-gradient(235deg, #ffaa2a, #f32804, #dfca0d);
+}
+.box_long .xoa button{
+	padding: 0;
+	height: 30px;
+	width: 30px;
+	background: linear-gradient(235deg, #ffaa2a, #f32804, #dfca0d);
+}
+.box_long:hover .xoa
+{
+	opacity: 1;
+	z-index: 1;
+}
